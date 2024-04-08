@@ -25,7 +25,7 @@ public class View {
 		System.out.println("Valor do segura para este veiculo é de " + seguro + " reais.");
 		
 		// Utilizar método para exibir valor da parcela em 10x
-		double parcelas = focus.parcelaSeguro(36);
+		double parcelas = focus.parcelaSeguro(10);
 		System.out.println(parcelas + " sera o valor de cada parcela, fazendo em 10x.");
 	}
 
