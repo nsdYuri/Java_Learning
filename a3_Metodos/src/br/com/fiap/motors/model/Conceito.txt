@@ -1,0 +1,29 @@
+Métodos:
+Um método pode ser entendido como uma operação ou serviço
+oferecido por um objeto, é um comportamento específico, residente no objeto, que
+define como ele deve agir quando exigido. Portanto, os métodos
+definem as habilidades dos objetos. Em uma classe método o é apenas uma definição. A ação só ocorre
+quando o método é invocado(chamado) através do objeto.
+
+Do ponto de vista da implementação, em um programa OO os
+métodos são implementados em funções colocadas no nível do objeto
+ao qual pertencem.
+
+Parametros:
+O parâmetro de um método correspondem as informações que esta precosa receber
+para ser executada.
+Os parâmetros são separados por vírgula e seguem a sintaxe:
+ <nome do parâmetro> : <tipo do parâmetro>
+ 
+Sintaxe:
+Sintaxe básica para declaração de um método:
+	<modificador> <tipo de retorno> <nomeDoMetodo>(<[lista de argumentos]>){
+	[instrucoes]
+	}
+	
+Retorno de Métodos:
+A tag <tipo de retorno> indica o tipo de valor que o método
+retornará.
+Se o método não retornar nenhum valor, deve-se declarar o método
+como void.
+Para retornar valor, utiliza-se a instrução return.
