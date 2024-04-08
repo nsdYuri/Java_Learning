@@ -1,0 +1,36 @@
+Classe:
+A classe é uma descrição nomeada para um grupo de entidades (chamadas de
+objetos ou instâncias de classe) que têm as mesmas características.
+Uma classe deve conter apenas os elementos necessários para resolver um
+aspecto bem definido do sistema.
+
+As características são os atributos (propriedades, campos de dados) e as
+operações (comportamentos, métodos, funções) que podem ser executadas
+nestes objetos.
+Em outros termos, uma classe descreve os serviços providos por seus objetos e
+quais informações eles podem armazenar.
+
+Esse armazenamento é feito dentro das variaveis.
+
+Atributo:
+Um atributo é o nome que se dá à propriedade de uma classe, descrevendo-os seus tipos e valores.
+Uma classe pode ter qualquer número de atributos ou nenhum
+atributo.
+
+Métodos/Operações:
+Método é um serviço que pode ser solicitado a partir de um objeto
+para executar de comportamento. Um método tem uma assinatura,
+que pode restringir os parâmetros reais que são possíveis.
+Uma classe pode ter qualquer número de métodos ou nenhum.
+
+Relação entre classe e objeto:
+Uma classe é uma definição abstrata de um objeto, ela define a estrutura e comportamento de cada objeto 
+da classe e serve como um modelo para a criação de objetos.
+Classes não são coleções de objetos.
+
+Definição de Orientação a Objeto
+Um conjunto de princípios (abstração, encapsulamento, herança e
+polimorfismo) guiando a construção do software, em conjunto com
+linguagens, bancos de dados e outras ferramentas que suportam
+esses princípios.
+
