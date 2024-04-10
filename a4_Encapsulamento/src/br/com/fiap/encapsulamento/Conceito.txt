@@ -1,0 +1,44 @@
+Encapsulamento:
+É aplicado aos atributos e métodos de uma classe
+Consiste em proteger os dados ou até mesmo escondê-los
+Para limitar ou controlar o conteúdo de um atributo, métodos devem ser
+utilizados para colocar ou alterar valores dos atributos de um objeto.
+
+Encapsulamento métodos:
+Para limitar o acesso a um método, métodos devem ser utilizados para
+acessar o método com visibilidade restrita
+
+Encapsulamento atributos:
+O uso de atributos diretamente pelos clientes de uma classe é
+desencorajado
+Quaisquer mudanças na estrutura interna da classe acarretariam em
+mudanças nos clientes
+Dependendo da visibilidade, o acesso aos atributos não podem ser feito
+diretamente
+
+Beneficios e o porque de aplicar o Encapsulamento:
+Esconde os detalhes da implementação de uma classe.
+Força o usuário a usar um método para acesso aos dados.
+Permite definir o modo de acesso aos dados, através de métodos.
+	Modo de leitura, escrita, leitura/escrita.
+Proteger os dados que estão dentro dos objetos, evitando assim que
+os mesmos sejam alterados de forma errada.
+
+
+Implementação Encapsulamento:
+O uso de métodos de leitura (get) e escrita (set) visam desacoplar os
+atributos de uma classe dos clientes que a utilizam.
+
+
+Java Beans:
+Os JavaBeans são componentes de software projetados para serem
+reutilizáveis, usados de uma maneira que permita isolar e encapsular um
+conjunto de funcionalidades.
+Podemos definir um Bean como uma classe Java que segue um
+conjunto de convenções de design e nomeação definidos pela
+especificação de JavaBeans do JSE.
+Um bean tem como premissa a ideia de encapsulamento. Assim sendo
+suas variáveis devem obrigatoriamente ser acessadas através de
+métodos.
+Outra importante regra refere-se ao construtor. Ele deve ser sem
+parâmetros.
