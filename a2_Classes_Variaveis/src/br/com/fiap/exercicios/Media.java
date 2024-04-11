@@ -38,8 +38,11 @@ public class Media {
 		// Calcular média semestral
 		double mediaSemestre = (mediacp * 0.2) + (challenge * 0.2) + (global * 0.6);
 		
-		// Exibir o nome e a média semestral do aluno
-		System.out.println("Nome: " + nome + " | Média semestral: " + mediaSemestre);
+		// Exibir o nome e a média de checkpoints do aluno
+		System.out.println("Nome: " + nome + " | Média checkpoints: " + mediaSemestre);
+		
+		// Exibir mensagem com o nome e a média de semestral do aluno
+		System.out.println("O aluno(a) " + nome + " concluiu o semestre com uma média de: " + mediaSemestre);
 		
 		
 		
