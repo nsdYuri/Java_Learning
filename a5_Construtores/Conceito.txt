@@ -1,0 +1,40 @@
+Construtores:
+Desempenham um papel essencial no processo de intanciação de  uma classe.
+Os construtores também são utilizados para inicializar os atributos com valores padrão ou valores informados.
+Basicamente são métodos especiais que são invocados juntamente com o operador "new".
+
+Os construtores não possuem valor de retorno (nem mesmo void) e possuem o memso nome da classe.
+Toda classe tem pelo menos um método construtor.
+Caso não especificarmos nenhum construtor, a linguagem Java fernece um default(padrão), que não recebe
+parâmetros.
+Quando declaramos algum construtor, o padrão não sera mais fornecido pelo Java.
+
+Definição basica:
+Construtores são métodos representados pelo mesmo nome da classe que permitem parametrizar o objeto
+no momento da sua intanciação.
+
+Exemplo do construtor padrão gerado pela JVM:
+	Produto objProduto = new Produto();
+"Produto()" é o método construtor sem parametros criado pelo java quando não criamos manualmente na classe.
+
+Exemplo de um construtor criado na classe
+public class Carro{
+	
+	String modelo;
+	float motor;
+	
+	Carro(String modeloCarro){	<- Método construtor									 
+		modelo = modeloCarro; 	<- Método construtor
+	}
+	
+	Carro(String modeloCarro, float motor){  <- Método construtor
+	modeloCarro = modeloCarro; 				 <- Método construtor
+	this.motor = motor;  					 <- Método construtor
+	}
+}
+
+Utilização do construtor acima:
+Carro car = new Carro("Gol", 1.8f);
+
+Funciona também como uma maneira mais facil de setar valores aos atributos de um objeto. 
+
