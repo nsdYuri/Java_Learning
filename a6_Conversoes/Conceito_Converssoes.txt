@@ -1,0 +1,61 @@
+Conversão é nada mais do que a capacidade de alterar o tipo de alguma variavel.
+Podem ser realizadas de diversas maneiras diferentes que serão apresentadas.
+
+Conversões - Parse:
+É possível transformar um valor contido numa String num valor de
+um tipo primitivo. Para isto utilize os métodos parse disponíveis em
+quase todas as classes que representam os tipos primitivos:
+
+byte valorByte = Byte.parseByte("20");
+short valorShort = Short.parseShort("-3");
+int valorInt = Integer.parseInt("490");
+long valorLong = Long.parseLong("5000000");
+float valorFloat = Float.parseFloat("43.70");
+double valorDouble = Double.parseDouble("-421.894");
+boolean valorBoolean = Boolean.parseBoolean("true");
+
+Conversões para String
+É possível criar uma String a partir de um valor contido num tipo
+primitivo. Para isto utilize o método valueOf da classe String:
+
+String v1 = String.valueOf(3); //byte
+String v2 = String.valueOf(54); //short
+String v3 = String.valueOf(-783); //int
+String v4 = String.valueOf(9862L); //long
+String v5 = String.valueOf(56.76f); //float
+String v6 = String.valueOf(-127.54d); //double
+String v7 = String.valueOf(true); //boolean
+String v8 = String.valueOf('a'); //char
+
+Conversões Implícitas
+A conversão automática de tipos ocorre quando você atribui um
+valor a uma variável de um tipo diferente ao do valor original:
+
+int i;
+double d;
+i = 10;
+d = i; //OK, um int eh menor que um double
+
+Conversões Explicitas
+A conversão automática de tipos NÃO ocorre quando você atribui
+um valor a uma variável de outro tipo cujo tamanho é menor em
+relação ao do tipo original
+
+double d;
+short s;
+d = 1.2345d;
+s = d; //ERRO - possible loss of precision
+
+
+Conversões Explicitas Casting
+É possível utilizar o recurso de Casting para ordenar ao Java fazer
+uma conversão específica
+Para "fazer um cast" é só colocar o tipo desejado entre parênteses
+antes do valor a ser convertido
+
+//neste caso o cast nao eh requerido
+double d = 10.5;
+int i = (int) d;
+//neste caso o cast eh requerido
+int vlInteiro = 25;
+byte vlByte = (byte) vlInteiro 
