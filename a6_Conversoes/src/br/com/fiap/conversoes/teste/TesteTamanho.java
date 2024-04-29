@@ -6,24 +6,20 @@ public class TesteTamanho {
 		
 		Scanner dados = new Scanner(System.in);
 		
-		String nome1, nome2;
-		double altura1, altura2;
-		double peso1, peso2;
-		
 		System.out.println("Digite o nome da primeira pessoa: ");
-		nome1 = dados.nextLine();
+		String nome1 = dados.nextLine();
 		System.out.println("Digite o nome da segunda pessoa: ");
-		nome2 = dados.nextLine();
+		String nome2 = dados.nextLine();
 		
 		System.out.println("Informe qual é a altura da primeira pessoa: ");
-		altura1 = dados.nextDouble();
+		double altura1 = dados.nextDouble();
 		System.out.println("Informe qual é a altura da segunda pessoa: ");
-		altura2 = dados.nextDouble();
+		double altura2 = dados.nextDouble();
 		
 		System.out.println("Informe quanto pesa a primeira pessoa: ");
-		peso1 = dados.nextDouble();
+		double peso1 = dados.nextDouble();
 		System.out.println("Informe quanto pesa a segunda pessoa: ");
-		peso2 = dados.nextDouble();
+		double peso2 = dados.nextDouble();
 		
 		if (peso1 > peso2) {
 			System.out.println(nome1 + " - É a pessoa mais pesada");
