@@ -1,4 +1,4 @@
-package br.com.fiap.conversoes.teste;
+package br.com.fiap.conversoes.exercicios;
 import java.util.Scanner;
 
 public class TesteTamanho {
