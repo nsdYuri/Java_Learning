@@ -1,0 +1,190 @@
+A classe String fornece um grande conjunto de métodos para sua manipulação, são eles:
+
+Métodos para comparação:
+	.equals(), .equalsIgnoreCase(), .starsWith(), .endsWith();
+
+Métodos para acesso:
+	.length(), .charAt();
+	
+Métodos para pesquisa:
+	.indexOf(), .lastIndexOf();
+	
+Métodos para "alteração":
+	.substring(), .toLowerCase(), .toUpperCase(), .replace();
+	
+
+	
+Comparação de Strings:
+A comparação entre o conteúdo de duas strings deve ser realizada
+através de métodos. Os principais para essa função são:
+• equals(String)
+• equalsIgnoreCase(String)
+OBS: Nunca utilize o operador == para verificar se uma string é igual a
+outra
+
+Equals:
+Método compara duas strings quanto ao conteudo, diferenciando caracteres maiusculos e minusculos.
+Exemplo:
+String textoA = "fiap";
+String textoB = "FIAP";
+if (textoA.equals(textoB)) {
+	System.out.println("#6 O texto ("+ textoA +") eh igual ao texto ("+ textoB +")");
+} else {
+	System.out.println("#6 O texto ("+ textoA +") NAO eh igual ao texto ("+ textoB +")");
+}
+
+Saida para o console = #6 O texto (fiap) NAO eh igual ao texto (FIAP) 
+// Não sao iguais por conta da diferenciação entre letras maiusculas e minusculas
+
+
+EqualsIgnoreCase:
+Esse método ira comparar duas Strings quanto ao conteudo e não diferenciara caracteres maiusculos e minusculos.
+Exemplo:
+String textoA = "fiap";
+String textoB = "FIAP";
+if (textoA.equalsIgnoreCase(textoB)){
+	System.out.println("#7 O texto ("+ textoA +") eh igual ao texto ("+ textoB +")");
+} else {
+	System.out.println("#7 O texto ("+ textoA +") NAO eh igual ao texto ("+ textoB +")");
+}
+
+Saida para o console = #7 O texto (fiap) eh igual ao texto (FIAP) 
+// São iguais pois não sera considerada a diferenciação entre letras maiusculas e minusculas
+
+
+StartsWith:
+O método startsWith verifica se uma string começa por uma
+determinada palavra (conjunto de caracteres). Este método recebe
+como parâmetro a palavra a ser procurada.
+Exemplo:
+String textoD = "tenha paciencia, existem muitos metodos";
+if(textoD.startsWith("tenha")) {
+	System.out.println("#8 O texto ("+ textoD +") comeca com (tenha)");
+} else {
+	System.out.println("#8 O texto ("+ textoD +") NAO comeca com (tenha)");
+}
+
+Saida para o console = #8 O texto (tenha paciencia, existem muitos metodos) comeca com (tenha)
+
+
+EndsWith:
+O método endsWith verifica se uma string termina com uma
+determinada palavra. Este método recebe como parâmetro a
+palavra a ser procurada
+Exemplo:
+String textoD = "tenha paciencia, existem muitos metodos";
+if(textoD.endsWith("dos")) {
+	System.out.println("#9 O texto ("+ textoD +") termina com (dos)");
+} else {
+	System.out.println("#9 O texto ("+ textoD +") NAO termina com (dos)");
+}
+
+Saida para o console = #9 O texto (tenha paciencia, existem muitos metodos) termina com (dos)
+
+
+Length:
+Esse método serve para obter o tamanho, ou melhor, o número de caracteres em uma
+string, o método length é utilizado
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+System.out.println("A string (" + nomeCompleto +") contem " + 
+nomeCompleto.length() + " letras");
+
+Saida para o console = A string (Paulo Roberto de Souza) contem 22 letras
+
+
+CharAt:
+• Serve para obter um caractere da string é utilizado o método charAt;
+• Este método recebe como parâmetro o índice (posição) do
+caractere na string
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+char terceiroChar = nomeCompleto.charAt(2);
+System.out.println("O terceiro caractere da string ("+ nomeCompleto+ ") é: "+ terceiroChar);
+
+Saida para o console = O terceiro caractere da string (Paulo Roberto de Souza) é: u
+
+
+IndexOf:
+Para obter o índice da primeira ocorrência de um caractere na string
+é utilizado método indexOf;
+• Este método recebe como parâmetro o caractere a ser localizado.
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+System.out.println("A letra 'a' aparece primeiro na posicao ("+ 
+nomeCompleto.indexOf('a') + ") da string (" + nomeCompleto + ")");
+
+Saida para o console = A letra 'a' aparece primeiro na posicao (1) da string (Paulo Roberto de Souza)
+
+
+LastIndexOf:
+• Para obter o índice da última ocorrência de um caractere na string é
+  utilizado método lastIndexOf
+• Este método recebe como parâmetro o caractere a ser localizado
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+System.out.println("A letra 'u' aparece por ultimo na posicao ("+ 
+nomeCompleto.lastIndexOf('u') +") da string (" + nomeCompleto
++")");
+
+Saida para o console = A letra 'u' aparece por ultimo na posicao (19) da string (Paulo Roberto de Souza)
+
+
+Substring:
+Consiste na capacidade de criação ed uma Strings através de um trecho de outra String.
+• Este método recebe como parâmetros a posição inicial (inclui) e a
+posição final (exclui) do conjunto de caracteres a serem copiados da
+string original.
+Exemplo:
+String stringE = "um; dois; tres; quatro";
+String numeroDois = stringE.substring(4, 8);
+System.out.println("Numero 2: " + numeroDois);
+
+Saida para o console = Numero 2: dois
+
+• Também é possível utilizar o método subString passando somente a
+posição inicial(inclusive) do conjunto de caracteres a serem copiados
+da string original
+Exemplo:
+String stringE = "um; dois; tres; quatro";
+String numeroQuatro = stringE.substring(16);
+System.out.println("Numero 4: " + numeroQuatro);
+
+Saida para o console = Numero 4: quatro
+
+
+ToUpperCase:
+Para converter os caracteres de uma string para maiúsculo é utilizado
+o método toUpperCase
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+String nomeMaiusculo = nomeCompleto.toUpperCase();
+System.out.println("A string ("+ nomeCompleto +") em maiusculo fica
+("+ nomeMaiusculo + ")");
+
+Saida para o console = A string (Paulo Roberto de Souza) em maiusculo fica(PAULO ROBERTO DE 
+SOUZA)
+
+
+ToLowerCase:
+Para converter os caracteres de uma string para minúsculo é utilizado
+o método toLowerCase
+String nomeCompleto = "Paulo Roberto de Souza";
+System.out.println("A string (" + nomeCompleto + ") em minusculo
+fica ("+ nomeCompleto.toLowerCase() +")");
+
+Saida para o console = A string (Paulo Roberto de Souza) em minusculo fica (paulo roberto de souza)
+
+
+Replace:
+Para substituir caracteres de uma string é utilizado o método replace.
+Exemplo:
+String nomeCompleto = "Paulo Roberto de Souza";
+String nomeCerto = nomeCompleto.replace('o', 'a');
+System.out.println("O nome ("+ nomeCompleto +") foi corrigido para 
+("+ nomeCerto +")");
+
+Saida para o console = O nome (Paulo Roberto de Souza) foi corrigido para (Paula Raberta de Sauza)
+
+
+

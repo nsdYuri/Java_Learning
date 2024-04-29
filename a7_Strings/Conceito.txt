@@ -1,0 +1,44 @@
+Manipulação de Strings:
+É essencial para fazer validações de dados de entrada, exibir informações
+para o usuário e outras informações baseadas em texto.
+Em java uma String é um objeto da classe String
+A String precisa ser declarada, instanciada e inicializada
+Importante saber que elas são imutávies, ou seja, após criar uma String é impossível alterar o seu valor
+
+Inicialização de uma String:
+É possivel inicializar uma String de varias maneiras distintas:
+String endereco = "" // String vazia;
+String endereco = new String();
+endereco = "Av.Paulista";
+String endereco = "Av.Paulista";
+String endereco = new String("Av.Paulista");
+
+Cuidados ao Instanciar uma String
+Caso uma string não seja instanciada, seu valor sera null.
+É necessário instanciar uma String para obter acesso a qualquer método atrelado a ela, ou a exceção NullPointerException
+pode ser lançada.
+Exemplos:
+Correto:
+	String endereco = new String();
+	int tamanhoDaString = endereco.length();
+Não instanciou, o valor da string continua null
+	String endereco = null;
+	int tamanhoDaString = endereco.length();
+Não compila:
+	String endereco;
+	int tamanhoDaString = endereco.length();
+	
+
+Sequencia de Escape:
+São alguns caracteres especiifcos que quando procedidos pela contra barra possuem um significado especial para
+o compilador. Em java as sequências de escape mais utilizadas são as seguinte:
+\t : Move o cursor para a próxima posição da tabulação horizontal
+\n : Move o cursor para o começo da próxima linha
+\' : Gera a saída do caractere de aspa simples (')
+\" : Gera a saída do caractere de aspas duplas (")
+\\ : Gera a saída do caractere de barra invertida (\)
+
+Exemplo:
+System.out.println("Eu disse \"Teste\"!");
+// Saida para o console = Eu disse "Teste"!
+

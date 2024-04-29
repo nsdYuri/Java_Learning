@@ -1,0 +1,26 @@
+Concatenação é a capacidade de ligação/junção do conteudo de duas ou mais Strings.
+É possivel criar uma String a partir da concatenação.
+A maneira mais facil de concatenar String é através do operador +
+
+Exemplo:
+String endereco = "Av. Paulista";
+String numero = "478";
+String enderecoCompleto = endereco + “, “ + numero; // Concatenando
+System.out.println(enderecoCompleto);
+
+Saida para o console = Av. Paulista, 478 // String endereco e numero concatenadas
+
+
+Método Concat
+Além do operador de +, também é possivel utilizar o método concat para realizar a concatenação.
+
+Exemplo: 
+String endereco = "Av. Paulista";
+String numero = "478";
+String enderecoCompleto = 
+endereco.concat(", ").concat(numero);
+System.out.println(enderecoCompleto);
+
+Saida para o console = Av. Paulista, 478
+
+
