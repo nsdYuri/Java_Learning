@@ -1,0 +1,64 @@
+Estrutura de Decisão simples:
+Sintaxe:
+	if (<condição lógica>) {
+		<instruções>
+}
+
+Exemplo:
+if(x > 10){
+	System.out.println("X eh maior que 10");
+}
+
+
+Estrutura de Decisão composta:
+Sintaxe:
+	if (<condição lógica>) {
+		<instruções>
+	} else {
+		<instruções>
+	}
+	
+Exemplo:
+if(x > 10){
+	System.out.println("X eh maior que 10");
+} else {
+	System.out.println("X eh menor ou igual a 10");
+}
+
+Estrutura de Decisão Switch-Case:
+switch (<variável>) {
+	case <constante 1> :{
+		<instruções>
+	break;
+	}
+	case <constante 2> :{
+		<instruções>
+	break;
+	}
+	case <constante 3> :{
+		<instruções>
+	break;
+	}
+	default:{
+	break;
+	}
+}
+
+Exemplo: 
+switch(opcao){
+	case 1: {
+		System.out.println("Opcao 1(Novo) - selecionada");
+	break;
+	}
+	case 2: {
+		System.out.println("Opcao 2(Imprimir) - selecionada");
+	break;
+	}
+	case 3: {
+		System.out.println("Opcao 3(Sair) - selecionada");
+	break;
+	}
+	default: {
+		System.out.println("Opcao invalida, selecione 1,2 ou 3");
+	}
+}
