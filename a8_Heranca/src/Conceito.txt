@@ -1,0 +1,55 @@
+O mecanismo de Herança possibilita a criação de novas classes a partir de uma ja existente. 
+É utilizada como forma de reutilizar os atributos e métodos de classes ja definidas, permitindo assim derivar uma
+nova classe mais especializada a paritr de outra classe mais genérica existente.
+Aplicar Herança sempre envolve basicamente dois elementos: uma superclasse (classe pai) e uma subclasse (classe filha).
+
+Superclasse:
+Também conhecida como classe ancestral ou classe pai. Apresenta as caracteristicas genéricas de um conjunto de objetos
+
+Subclasse:
+Conhecida também por classe descedente ou classe filha. Elas são derivadas da superclasse e incluem suas próprias
+caracteristicas.
+
+Principais caracteristicas de uma subclasse:
+	Herda atributos.
+	Permite adicionar novos atributos (que serão visiveis apenas nessa subclasse)
+	Em relação aos métodos, a subclasse poderá utilizá-los/herdá-los
+	(superclasse), bem como criar novos métodos e alterá-los.
+	Métodos construtores não são herdados (porem podemos chama-los dentro do construtor da subclasse)
+	
+	
+OBS: O java não permite Herança Multipla, ou seja, não é possivel uma classe herdar de varias outras.
+
+Extends:
+A palavra chave extends é utilizada na declaração de uma classe para especificar quem é sua superclasse
+Por default, toda classe criada no java é estendida a partir da classe Object
+Sabendo disso, caso a palavra chave seja omitida, a classe Object sera assumida como superclasse
+
+Sintaxe:
+[public] [abstract | final] class <subclasse> extends <superclasse> {
+}
+
+Super:
+• O construtor da classe estendida lida apenas com as variáveis
+definidas na classe, e o construtor da superclasse lida com as
+variáveis que são herdadas;
+• Um construtor da classe estendida pode invocar diretamente
+um dos construtores da superclasse;
+• Construtores não são herdados e precisam ser implementados
+na subclasse;
+• Construtores da subclasse “sempre” utilizam algum construtor
+da superclasse;
+• A referência super(<parâmetros>) é utilizada para invocar o
+construtor da superclasse
+
+Permite que atributos e métodos da superclasse sejam referenciados
+pelos métodos da subclasse;
+• Sintaxe:
+• super.<atributo>;
+• super.<método>;
+• Uso sucessivo de super não é permitido;
+• super.super.nomeMetodo;
+• Caso queira referir-se a um construtor da superclasse, a sintaxe é
+diferente. Deve ser utilizada apenas a referência seguida de um par de
+parênteses;
+• super();
