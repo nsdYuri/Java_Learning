@@ -1,0 +1,76 @@
+Poliformismo:
+O significado literal da palavra é de algo que seja capaz de assumir diferentes formas
+por isso o nome de polimorfismo.
+No contexto da OO isso significa ter multiplos comportamentos.
+A capacidade polimórfica é dependente do mecanismo de herança.
+
+
+Recursos do polimorfismo por meio de métodos:
+
+Overload = Sobrecarga de Métodos
+Sobrecarregar um método significa prover mais de uma versão do de um mesmo método
+Essas versões devem, necessariamente, conter parâmetros diferentes, seja no tipo ou na quantidade deles,
+o tipo de retorno é indiferente.
+Exemplos:
+public class Ninja {
+	void mover(double x) {
+	//..
+ 	}
+ 	double mover(double x, double y) {
+ 	//..
+ 	}
+ 	void mover(double x, double y, int velocidade) {
+ 	//..
+ 	}
+Todos são sobrecargas, possuem o mesmo nome, porem com parametros diferentes
+
+Overriding - Sobrescrita de Métodos
+Tambem conhecida como sobreposição, a sobrescrita é a implementação de métodos em subclasses
+de tal forma que anule o comportamente que ele apresentaca em sua superclasse ou apenas acrescente novas instruções
+Acontece qunado o método herdade apresenta o memso nome em realção ao método que está sendo codificado na subclasse
+Essa pratica de overriding é realizada quando um método da subclasse realiza seua tarefa diferente daquela da superclsase
+ou quando desejamos acrescentar novas ilustrações á implementação de um método da subclasse.
+
+
+Palavra Reservada - "THIS"
+This significa a referência ao próprio objeto
+Através da palavra reservada this é possível acessar atributos,
+métodos e construtores do objeto da classe em questão.
+
+Na maioria das vezes a palavra this é utilizada em duas situações:
+	Quando houver duas variáveis com o mesmo nome numa mesma
+ 	classe, uma pertencendo à classe e outra pertencendo a algum dos
+ 	métodos da classe. Nesse caso, apenas esse método específico
+ 	requer o uso do this, se quiser fazer referência ao campo da classe.
+ 	Quando uma classe passar uma referência de si própria a um
+ 	método.
+ 	
+Exemplo:
+public class Carro{
+	
+	String modelo;
+	float motor;
+	
+	void setModelo(String modelo){
+		this.modelo = modelo;
+	}
+} 	
+
+O 'modelo' vindo depois do 'this.' esta se referindo ao atributo declarado no inicio da classe
+Ja o 'modelo' após o sinal de igual se refere ao parametro do método.
+
+
+Operador - InstanceOf:
+Verifica se um objeto é uma instância da classe testada;
+Retorna true se o objeto à esquerda do operador é do
+tipo(classe) especificado à direita do operador
+
+Exemplo sintaxe:
+Leao leao = new Leao();
+Animal ani = leao;
+if(ani instanceof Felino){
+	System.out.println("ani eh do tipo Felino");
+} else {
+	System.out.println("ani NAO eh do tipo Felino");
+ }
+
